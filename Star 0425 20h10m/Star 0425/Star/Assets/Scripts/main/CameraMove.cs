@@ -7,6 +7,7 @@ public class CameraMove : MonoBehaviour
     public GameGenerator gameGenerator;
     public float defPosZ;
     public int maxCount;
+    public float maxDistanse;
     private Vector3 oldPos;
     private GameObject player;
     private float target;
@@ -27,7 +28,7 @@ public class CameraMove : MonoBehaviour
     void Update()
     {
         Vector3 v3 = player.transform.position - oldPos;
-        transform.position += new Vector3(v3.x / 4.0f, v3.y / 4.0f);
+        transform.position += new Vector3(v3.x / (saveCount + 1), v3.y / (saveCount + 1), 0f);
         oldPos = player.transform.position;
         transform.LookAt(player.transform.position);
 
@@ -53,7 +54,7 @@ public class CameraMove : MonoBehaviour
                 if (changeCount[nowCount] == 0)
                     target = defPosZ;
                 else
-                    target = (defPosZ - (changeCount[nowCount] / 10f));
+                    target = (maxDistanse / changeCount.Length * (nowCount + 1));
                 move = target - transform.position.z;
                 saveCount = nowCount;
                 count = 0;

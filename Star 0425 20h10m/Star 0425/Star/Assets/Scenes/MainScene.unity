@@ -1208,8 +1208,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameGenerator: {fileID: 2388096640501033390}
-  defPosZ: -15
+  defPosZ: -5
   maxCount: 30
+  maxDistanse: -30
 --- !u!114 &534669907
 MonoBehaviour:
   m_ObjectHideFlags: 0
