@@ -19,7 +19,7 @@ public class Thermography : MonoBehaviour
     {
         if (!DebugPC.pc)
         {
-            if (Input.GetMouseButtonDown(1) && !coolTimeNow)
+            if (Input.GetMouseButtonDown(0) && !coolTimeNow)
             {
                 thermography = Instantiate(thermographyOriginal, transform.position, Quaternion.identity) as GameObject;
                 coolTimeNow = true;
