@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 1096351255435475290}
   - component: {fileID: 2522854684780674995}
   - component: {fileID: 738661314235393696}
+  - component: {fileID: 2288744268957705469}
+  - component: {fileID: 5474399058543437613}
   m_Layer: 0
   m_Name: rock0302
   m_TagString: DangerObject
