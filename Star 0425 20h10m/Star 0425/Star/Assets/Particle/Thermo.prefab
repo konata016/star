@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8918768722123236377}
   - component: {fileID: 8918768722123236378}
   m_Layer: 1
-  m_Name: Redeffect
+  m_Name: Thermo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8918768722123236379}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -3.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -48,7 +48,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 0
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -299,7 +299,7 @@ ParticleSystem:
           inWeight: 0.33333334
           outWeight: 0.8172462
         - serializedVersion: 3
-          time: 0.08003059
+          time: 0.250868
           value: 1
           inSlope: 0.00000058195474
           outSlope: 0.00000058195474
@@ -611,7 +611,7 @@ ParticleSystem:
     randomizeRotationDirection: 0
     maxNumParticles: 1000
     size3D: 0
-    rotation3D: 1
+    rotation3D: 0
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
@@ -4673,7 +4673,7 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: d3a23009f989519459b89ada9a3d4c31, type: 2}
-  - {fileID: 2100000, guid: d3a23009f989519459b89ada9a3d4c31, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
