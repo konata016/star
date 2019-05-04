@@ -8,7 +8,6 @@ public class ThermographyHit : MonoBehaviour
 
     public GameObject littlePlanetOriginal;
     public GameObject planetHit;
-    public GameObject effectObject;
     private PlanetHit hit;
     public int split;
 
@@ -20,7 +19,7 @@ public class ThermographyHit : MonoBehaviour
         if (Random.Range(0,2) == 0)
         {
             isThermography = true;
-            particle = effectObject.GetComponent<ParticleSystem>();
+            particle = GetComponent<ParticleSystem>();
         }
         else
         {
@@ -33,7 +32,7 @@ public class ThermographyHit : MonoBehaviour
     {
         if (other.gameObject.tag == "Thermography")
         {
-            if (isThermography && !particle.isPlaying)
+            if (isThermography)
             {
                 thermographyHitNow = true;
                 particle.Play();
